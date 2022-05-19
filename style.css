@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: Titillium Web;
+    background-color: #14213d;
+}
+
+section {
+    width: 95vw;
+    height: 95vh;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 75em;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 400px;
+}
+
+.is--orange-bold {
+    color: #FCA311;
+    font-weight: bold;
+}
+
+.horizontal-div {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for range slider */
+
+.range__wrap {
+    min-width: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: rgba(255, 255, 255, 0.459) 1px solid;
+}
+
+.range__slider {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+}
+
+#range-el {
+    -webkit-appearance: none;
+    height: 3px;
+    width: 70%;
+    background-color: #e5e5e5;
+}
+
+#range-el::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #FCA311;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#range-el::-moz-range-progress {
+    background-color: #FCA311;
+    height: inherit;
+}
+
+/* Styling for password outputs */
+
+.passwords__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+}
+
+.password__output {
+    min-width: 475px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #FCA311;
+    border-radius: 5px;
+    padding: 15px 40px 15px 10px;
+    margin: 10px 0;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    caret-color: transparent;
+}
+
+.field-wrap {
+    position: relative;
+}
+
+.clipboard-icon {
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    cursor: pointer;
+}
+
+.clipboard-icon:hover {
+    opacity: 70%;
+}
+
+/* sytling for toggle switches */
+
+.tgl-wrap {
+    padding-bottom: 20px;
+}
+
+.tgl-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tg-list {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.tg-list-item {
+  margin: 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tgl {
+    display: none;
+  }
+  .tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+    box-sizing: border-box;
+  }
+  .tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+    background: none;
+  }
+  .tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+    background: none;
+  }
+  .tgl + .tgl-btn {
+    outline: 0;
+    display: block;
+    width: 3.25em;
+    height: 1.75em;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+  }
+  .tgl + .tgl-btn:after {
+    left: 0;
+  }
+  .tgl + .tgl-btn:before {
+    display: none;
+  }
+  .tgl:checked + .tgl-btn:after {
+    left: 50%;
+  }
+  
+.tgl-flat + .tgl-btn {
+    padding: 2px;
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    background: none;
+    border: 2px solid #f2f2f2;
+    border-radius: 3px;
+  }
+  .tgl-flat + .tgl-btn:after {
+    transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    background: #f2f2f2;
+    content: "";
+    border-radius: 3px;
+  }
+  .tgl-flat:checked + .tgl-btn {
+    border: 2px solid #FCA311;
+  }
+  .tgl-flat:checked + .tgl-btn:after {
+    left: 50%;
+    background: #FCA311;
+  }
+  
+/* Styling for lottie */
+
+#animContainer {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    position: relative;
+    bottom: -1px;
+}
+
+#animContainer:hover {
+    opacity: .70;
+}
