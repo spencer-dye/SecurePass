@@ -9,6 +9,7 @@ html {
 section {
     width: 95vw;
     height: 95vh;
+    margin-top: 1.5rem;
 }
 
 p {
@@ -18,7 +19,6 @@ p {
 
 .container {
     max-width: 75em;
-    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
