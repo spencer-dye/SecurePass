@@ -1,2 +1,2 @@
 # SecurePass
-A robust password generator
+A robust password generator that allows the user to alter the desired length of the password. There are also toggles that allow the user to choose if they want to include uppercase characters. lowercase characters, numbers, and symobls in the generated password. The password generator outputs to 4 different field where the user can click an icon to 1-click copy the passowrd to their clipboard. There is also a function that allows the user to click a button that regenearates the passwords with the current parameters.
