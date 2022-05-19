@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SecurePass</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <img src="images/logo.svg" class="logo">
+            <div class="range__wrap">
+                <p>Strength: <span id="strength-el" class="is--orange-bold">Strong</span></p>
+                    <div class="range__slider">
+                        <p><span class="is--orange-bold">4</span></p>
+                        <input autocomplete="off" id="range-el" oninput="runFunctions()" type="range" min="4" max="40" value="16" steps="1" title="Drag to set password length">
+                        <p><span class="is--orange-bold">40</span></p>
+                </div>
+                <div class="horizontal-div">
+                <div id="animContainer" onclick="runFunctions()" title="Generate new options"> </div>
+                <p>Length: <span id="length-el" class="is--orange-bold">16 characters</span></p>
+                </div>
+                <div class="tgl-wrap">
+                    <ul class="tg-list">
+                        <li class="tg-list-item">
+                          <p class="tgl-text">Uppercase</p>
+                          <input class="tgl tgl-flat" id="uppercase" type="checkbox" onclick="runFunctions()" autocomplete="off" checked/>
+                          <label class="tgl-btn" for="uppercase"></label>
+                        </li>
+                        <li class="tg-list-item">
+                            <p class="tgl-text">Lowercase</p>
+                            <input class="tgl tgl-flat" id="lowercase" type="checkbox" onclick="runFunctions()" autocomplete="off" checked/>
+                            <label class="tgl-btn" for="lowercase"></label>
+                          </li>
+                          <li class="tg-list-item">
+                            <p class="tgl-text">Symbols</p>
+                            <input class="tgl tgl-flat" id="symbols" type="checkbox" onclick="runFunctions()" autocomplete="off" checked/>
+                            <label class="tgl-btn" for="symbols"></label>
+                          </li>
+                          <li class="tg-list-item">
+                            <p class="tgl-text">Numbers</p>
+                            <input class="tgl tgl-flat" id="numbers" type="checkbox" onclick="runFunctions()" autocomplete="off" checked/>
+                            <label class="tgl-btn" for="numbers"></label>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+            <div class="passwords__wrap">
+                <div class="field-wrap">
+                    <input type="text" id="password-el1" class="password__output" maxlength="40" autocomplete="off">
+                    <img src="images/clipboard-icon.svg" class="clipboard-icon" onclick="copyToClipboard1()" title="Copy to Clipboard">
+                </div>
+                <div class="field-wrap">
+                    <input type="text" id="password-el2" class="password__output" maxlength="40" autocomplete="off">
+                    <img src="images/clipboard-icon.svg" class="clipboard-icon" onclick="copyToClipboard2()" title="Copy to Clipboard">
+                </div>
+                <div class="field-wrap">
+                    <input type="text" id="password-el3" class="password__output" maxlength="40" autocomplete="off">
+                    <img src="images/clipboard-icon.svg" class="clipboard-icon" onclick="copyToClipboard3()" title="Copy to Clipboard">
+                </div>
+                <div class="field-wrap">
+                    <input type="text" id="password-el4" class="password__output" maxlength="40" autocomplete="off">
+                    <img src="images/clipboard-icon.svg" class="clipboard-icon" onclick="copyToClipboard4()" title="Copy to Clipboard">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.4/lottie.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
