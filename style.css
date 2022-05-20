@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 
+body {
+    font-size: 1vw;
+}
+
 html {
     box-sizing: border-box;
     font-family: Titillium Web;
@@ -7,14 +11,16 @@ html {
 }
 
 section {
-    width: 95vw;
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 95vh;
-    margin-top: 1.5rem;
 }
 
 p {
     color: white;
-    font-size: 20px;
+    font-size: 1.1em;
 }
 
 .container {
@@ -27,7 +33,7 @@ p {
 }
 
 .logo {
-    width: 400px;
+    width: 22em;
 }
 
 .is--orange-bold {
@@ -43,39 +49,43 @@ p {
 /* Styling for range slider */
 
 .range__wrap {
-    min-width: 475px;
+    min-width: 28em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 1.2em;
     border-bottom: rgba(255, 255, 255, 0.459) 1px solid;
 }
 
 .range__slider {
     background-color: white;
-    border-radius: 5px;
+    border-radius: .275em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 400px;
+    width: 23em;
 }
 
 #range-el {
     -webkit-appearance: none;
-    height: 3px;
+    height: .24em;
     width: 70%;
     background-color: #e5e5e5;
 }
 
 #range-el::-moz-range-thumb {
     -webkit-appearance: none;
-    height: 20px;
-    width: 20px;
+    height: 1.5em;
+    width: 1.5em;
     background-color: #FCA311;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+#range-el::-moz-range-thumb:hover {
+    opacity: .9;
 }
 
 #range-el::-moz-range-progress {
@@ -89,20 +99,20 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 35px;
+    padding-top: 1.8em;
 }
 
 .password__output {
-    min-width: 475px;
+    min-width: 26em;
     text-align: center;
     background-color: transparent;
-    border: 2px solid #FCA311;
-    border-radius: 5px;
-    padding: 15px 40px 15px 10px;
-    margin: 10px 0;
+    border: .125em solid #FCA311;
+    border-radius: .275em;
+    padding: .8em 2em .8em .75em;
+    margin: .6em 0;
     outline: none;
     color: white;
-    font-size: 20px;
+    font-size: 1em;
     caret-color: transparent;
 }
 
@@ -112,9 +122,10 @@ p {
 
 .clipboard-icon {
     position: absolute;
-    right: 20px;
-    top: 28px;
+    right: 1em;
+    top: 1.5em;
     cursor: pointer;
+    width: 1em
 }
 
 .clipboard-icon:hover {
@@ -124,11 +135,11 @@ p {
 /* sytling for toggle switches */
 
 .tgl-wrap {
-    padding-bottom: 20px;
+    padding-bottom: 1.25em;
 }
 
 .tgl-text {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 500;
 }
 ul,
@@ -166,8 +177,8 @@ li {
   .tgl + .tgl-btn {
     outline: 0;
     display: block;
-    width: 3.25em;
-    height: 1.75em;
+    width: 2.75em;
+    height: 1.375em;
     position: relative;
     cursor: pointer;
     -webkit-user-select: none;
@@ -193,20 +204,20 @@ li {
   }
   
 .tgl-flat + .tgl-btn {
-    padding: 2px;
+    padding: .125em;
     transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
     background: none;
-    border: 2px solid #f2f2f2;
-    border-radius: 3px;
+    border: .125em solid #f2f2f2;
+    border-radius: .225em;
   }
   .tgl-flat + .tgl-btn:after {
     transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
     background: #f2f2f2;
     content: "";
-    border-radius: 3px;
+    border-radius: .225em;
   }
   .tgl-flat:checked + .tgl-btn {
-    border: 2px solid #FCA311;
+    border: .125em solid #FCA311;
   }
   .tgl-flat:checked + .tgl-btn:after {
     left: 50%;
@@ -216,14 +227,18 @@ li {
 /* Styling for lottie */
 
 #animContainer {
-    width: 30px;
-    height: 30px;
+    width: 1.8em;
+    height: 1.8em;
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: .85em;
     position: relative;
     bottom: -1px;
 }
 
 #animContainer:hover {
     opacity: .70;
+}
+
+@media only screen and (min-width: 1580px) {
+    body {font-size: 1.1em;}
 }
