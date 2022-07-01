@@ -10,6 +10,7 @@ let passwordOne = document.getElementById("password-el1");
 let passwordTwo = document.getElementById("password-el2");
 let passwordThree = document.getElementById("password-el3");
 let passwordFour = document.getElementById("password-el4");
+let copyMsg = document.getElementById('copy-msg')
 
 //assignments
 const randomFunc = {
@@ -17,6 +18,12 @@ const randomFunc = {
     upper: randomUppercase,
     number: randomNumber,
     symbol: randomSymbol,
+}
+
+//copied message 
+function copiedMessage() {
+    copyMsg.classList.remove('msg-hide')
+    setTimeout(() => {copyMsg.classList.add('msg-hide')}, 2500);
 }
 
 //check inputs
@@ -112,24 +119,28 @@ function copyToClipboard1() {
     var copyPassword = document.querySelector("#password-el1");
     copyPassword.select();
     navigator.clipboard.writeText(copyPassword.value);
+    copiedMessage()
 }
 
 function copyToClipboard2() {
     var copyPassword = document.querySelector("#password-el2");
     copyPassword.select();
     navigator.clipboard.writeText(copyPassword.value);
+    copiedMessage()
 }
 
 function copyToClipboard3() {
     var copyPassword = document.querySelector("#password-el3");
     copyPassword.select();
     navigator.clipboard.writeText(copyPassword.value);
+    copiedMessage()
 }
 
 function copyToClipboard4() {
     var copyPassword = document.querySelector("#password-el4");
     copyPassword.select();
     navigator.clipboard.writeText(copyPassword.value);
+    copiedMessage()
 }
 
 //lottie files
