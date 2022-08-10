@@ -267,4 +267,20 @@ li {
 @media only screen and (min-width: 1580px) {
     body {font-size: 1.1em;}
 }
+
+@media only screen and (max-width: 1300px) {
+    body {font-size: 14px;}
+}
+
+@media only screen and (max-width: 575px) {
+  body {font-size: 12px;}
+}
+
+@media only screen and (max-width: 425px) {
+  body {font-size: 11px;}
+}
+
+@media only screen and (max-width: 350px) {
+  body {font-size: 10px;}
+}
 /*# sourceMappingURL=style.css.map */
